@@ -3,5 +3,8 @@
 // Свайпер
 // import "./libs/swiper";
 
+// Gsap
+import "./libs/gsap";
+
 // Tippy
 // import "./libs/tippy";
