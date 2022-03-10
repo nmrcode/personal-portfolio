@@ -1,0 +1,106 @@
+// Стили для бургера
+// burger-btn($width: 30px, $height: 30px, $line-height: 2px, $color: #000, $color-active: currentColor, $z: 10)
+.burger {
+   @include burger-btn($color-active: $color-white);
+   @include mb_576 {
+      display: none;
+   }
+}
+
+.header {
+   position: fixed;
+   z-index: 5;
+   width: 100%;
+   transition: background-color 0.2s ease-in-out;
+   // .header__wrapper
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: rem(60) 0;
+      transition: padding 0.2s ease-in-out;
+      @include pc_768 {
+         padding: rem(30) 0;
+      }
+   }
+   // .header__nav
+   &__nav {
+   }
+   &._scrolled {
+      background-color: $color-white;
+      .header__wrapper {
+         padding: rem(30) 0;
+      }
+   }
+}
+
+.nav {
+   @include pc_576 {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-accent;
+      clip-path: circle(0 at 100% 0);
+      transition: clip-path 0.2s ease-in-out;
+   }
+   &._open {
+      clip-path: circle(100% at 50% 0);
+   }
+   // .nav__list
+   &__list {
+      @include mb_576 {
+         display: flex;
+         align-items: center;
+      }
+      @include pc_576 {
+         text-align: center;
+         padding: rem(90) rem($container-offset) 0;
+      }
+   }
+   // .nav__item
+   &__item {
+      @include mb_576 {
+         &:not(:last-child) {
+            @include ad-value(margin-right, 66, 20, 1);
+         }
+      }
+      @include pc_576 {
+         &:not(:last-child) {
+            margin-bottom: rem(20);
+         }
+      }
+   }
+   // .nav__link
+   &__link {
+      position: relative;
+      font-weight: 700;
+      font-size: rem(16);
+      color: $color-black;
+      line-height: calc((24 / 16) * 100%);
+      letter-spacing: em(2.3, 16);
+      text-transform: uppercase;
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: rem(-5);
+         left: 0;
+         width: 0;
+         height: rem(2);
+         background-color: currentColor;
+         transition: width 0.2s ease-in-out;
+      }
+      @include pc_576 {
+         font-size: rem(24);
+         color: $color-white;
+      }
+      @include pc_hover {
+         &::before {
+            width: 100%;
+         }
+      }
+   }
+}

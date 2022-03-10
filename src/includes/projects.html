@@ -1,0 +1,219 @@
+<section id="projects" class="page__projects projects">
+   <div class="container">
+      <div class="projects__wrapper">
+         <h2 class="projects__title title title--h2" data-bg="Проекты">Проекты</h2>
+         <div class="projects__tabs tabs-projects">
+            <ul class="tabs-projects__list list-reset">
+               <li class="tabs-projects__item">
+                  <button class="tabs-projects__tab btn-reset _active" data-filter="all">Все</button>
+               </li>
+               <li class="tabs-projects__item">
+                  <button class="tabs-projects__tab btn-reset" data-filter="site">Сайты</button>
+               </li>
+               <li class="tabs-projects__item">
+                  <button class="tabs-projects__tab btn-reset" data-filter="app">Приложения</button>
+               </li>
+               <li class="tabs-projects__item">
+                  <button class="tabs-projects__tab btn-reset" data-filter="react">React</button>
+               </li>
+            </ul>
+         </div>
+         <ul class="projects__list list-reset">
+            <li class="projects__item" data-filter-value="site">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Личное портфолио
+                  </h3>
+                  <p class="project-article__descr">Мое личное портфолио, которое содержит мои проекты, контакты и
+                     информацию обо мне</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">HTML</li>
+                           <li class="stack-list__tag">CSS</li>
+                           <li class="stack-list__tag">SASS</li>
+                           <li class="stack-list__tag">JavaScript</li>
+                           <li class="stack-list__tag">Swiper</li>
+                           <li class="stack-list__tag">Gulp</li>
+                           <li class="stack-list__tag">Webpack</li>
+                           <li class="stack-list__tag">Gsap</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/nmcode-portfolio"
+                        class="project-article__btn btn btn--sm">Github</a>
+                     <a target="_blank" href="#"
+                        class="project-article__btn btn btn--sm">Демо</a>
+                  </div>
+               </article>
+            </li>
+            <li class="projects__item" data-filter-value="site">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Куда-пицца
+                  </h3>
+                  <p class="project-article__descr">Многостраничный и полностью адаптивный интернет-магазин "Куда-пицца". Большой по размеру
+                     проект, в котором было написано много JavaScript компонентов. Среди них: модальные окна, туллтипы,
+                     слайдеры, отслеживание скролла, кнопка 'показать полностью' и др. На данный проект было потрачено два с половиной дня. Также активно использовалась BEM методология. Весь проект написан на относительных единицах rem/em (использовались миксины)</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">HTML</li>
+                           <li class="stack-list__tag">CSS</li>
+                           <li class="stack-list__tag">SASS</li>
+                           <li class="stack-list__tag">JavaScript</li>
+                           <li class="stack-list__tag">Swiper</li>
+                           <li class="stack-list__tag">Gulp</li>
+                           <li class="stack-list__tag">Webpack</li>
+                           <li class="stack-list__tag">BEM</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/kuda-pizza"
+                        class="project-article__btn btn btn--sm">Github</a>
+                     <a target="_blank" href="https://nmrcode.github.io/ghp-kuda-pizza/"
+                        class="project-article__btn btn btn--sm">Демо</a>
+                  </div>
+               </article>
+            </li>
+            <li class="projects__item" data-filter-value="app">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Gulp-сборка
+                  </h3>
+                  <p class="project-article__descr">Личная сборка Gulp. Данная сборка умеет минимизировать html, css,
+                     js, работать с препроцессорами, создавать SVG-спрайты, конвертировать шрифты, проставлять
+                     кроссбраузерные префиксы,
+                     оптимизировать JavaScript код для старых браузеров, использовать шаблонизатор file-include,
+                     создавать
+                     модульную структуру JavaScript файлов и многое другое</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">JavaScript</li>
+                           <li class="stack-list__tag">Gulp</li>
+                           <li class="stack-list__tag">Webpack</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/nm-gulp-starter"
+                        class="project-article__btn btn btn--sm">Github</a>
+                  </div>
+               </article>
+            </li>
+            <li class="projects__item" data-filter-value="app">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Калькулятор
+                  </h3>
+                  <p class="project-article__descr">Простой калькулятор на чистом JavaScript. Также реализован ввод с
+                     клавиатуры и приоритетность скобок</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">HTML</li>
+                           <li class="stack-list__tag">CSS</li>
+                           <li class="stack-list__tag">SASS</li>
+                           <li class="stack-list__tag">JavaScript</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/calculator-js"
+                        class="project-article__btn btn btn--sm">Github</a>
+                     <a target="_blank" href="https://nmrcode.github.io/calculator-js/"
+                        class="project-article__btn btn btn--sm">Демо</a>
+                  </div>
+               </article>
+            </li>
+            <li class="projects__item" data-filter-value="app">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Конвертер масс
+                  </h3>
+                  <p class="project-article__descr">Конвертер масс на чистом JavaScript. Конвертирует в тонны, центнеры,
+                     килограммы, граммы, фунты и унции. Для стилизации использован Tailwind.</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">HTML</li>
+                           <li class="stack-list__tag">CSS</li>
+                           <li class="stack-list__tag">SASS</li>
+                           <li class="stack-list__tag">JavaScript</li>
+                           <li class="stack-list__tag">Tailwind</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/weight-converter-js"
+                        class="project-article__btn btn btn--sm">Github</a>
+                     <a target="_blank" href="https://nmrcode.github.io/weight-converter-js/"
+                        class="project-article__btn btn btn--sm">Демо</a>
+                  </div>
+               </article>
+            </li>
+            <li class="projects__item" data-filter-value="app">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Todo лист
+                  </h3>
+                  <p class="project-article__descr">Todo лист с использованием LocalStorage</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">HTML</li>
+                           <li class="stack-list__tag">CSS</li>
+                           <li class="stack-list__tag">SASS</li>
+                           <li class="stack-list__tag">JavaScript</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/todo-js"
+                        class="project-article__btn btn btn--sm">Github</a>
+                     <a target="_blank" href="https://nmrcode.github.io/todo-js/"
+                        class="project-article__btn btn btn--sm">Демо</a>
+                  </div>
+               </article>
+            </li>
+            <li class="projects__item" data-filter-value="site">
+               <div class="projects__counter"></div>
+               <article class="projects__article project-article ">
+                  <h3 class="project-article__title title title--h3">
+                     Landix
+                  </h3>
+                  <p class="project-article__descr">Лендинг страница сайта Landix</p>
+                  <ul class="project-article__list stack-list list-reset">
+                     <li class="stack-list__item">
+                        <ul class="stack-list__tags list-reset">
+                           <li class="stack-list__tag">HTML</li>
+                           <li class="stack-list__tag">CSS</li>
+                           <li class="stack-list__tag">SASS</li>
+                           <li class="stack-list__tag">JavaScript</li>
+                           <li class="stack-list__tag">Swiper</li>
+                           <li class="stack-list__tag">Gulp</li>
+                           <li class="stack-list__tag">Webpack</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="project-article__buttons">
+                     <a target="_blank" href="https://github.com/nmrcode/landix"
+                        class="project-article__btn btn btn--sm">Github</a>
+                     <a target="_blank" href="https://nmrcode.github.io/ghp-landix/"
+                        class="project-article__btn btn btn--sm">Демо</a>
+                  </div>
+               </article>
+            </li>
+         </ul>
+      </div>
+   </div>
+</section>

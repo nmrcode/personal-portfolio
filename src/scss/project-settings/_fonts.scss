@@ -1,0 +1,14 @@
+// Шрифты
+//Миксин для подключения через шрифтов
+// @mixin font-face($font-family, $url, $weight, $style)
+
+//@include font-face(
+//   $font-family: Montserrat,
+//   $url: Montserrat-Regular,
+//   $weight: 400,
+//   $style: normal
+//);
+
+//Подключение через Google Fonts import
+//&display=swap
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap);

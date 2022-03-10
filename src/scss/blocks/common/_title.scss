@@ -1,0 +1,50 @@
+.title {
+   font-weight: 700;
+
+   // .title--h1
+   &--h1 {
+      font-size: rem(100);
+      line-height: em(150, 100);
+      @include pc_768 {
+         font-size: rem(60);
+      }
+      @include pc_576 {
+         font-size: rem(50);
+      }
+   }
+   // .title--h2
+   &--h2 {
+      position: relative;
+      font-size: rem(80);
+      line-height: calc((120 / 80) * 100%);
+      @include pc_768 {
+         font-size: rem(50);
+      }
+      @include pc_576 {
+         font-size: rem(40);
+      }
+      @include mb_768 {
+         &::before {
+            content: attr(data-bg);
+            position: absolute;
+            top: rem(-30);
+            left: 0;
+            z-index: -1;
+            font-size: rem(120);
+            line-height: 1;
+            opacity: 0.05;
+            color: $color-accent;
+         }
+      }
+   }
+   &--h3 {
+      font-size: rem(60);
+      line-height: calc((90 / 60) * 100%);
+      @include pc_768 {
+         font-size: rem(40);
+      }
+      @include pc_576 {
+         font-size: rem(30);
+      }
+   }
+}

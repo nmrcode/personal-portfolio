@@ -1,0 +1,32 @@
+.info-about {
+   background-color: $color-accent;
+   padding: rem(40);
+   @include pc_768 {
+      padding: rem(25);
+   }
+   // .info-about__list
+   &__list {
+   }
+   // .info-about__item
+   &__item {
+      span {
+         display: block;
+         text-transform: uppercase;
+         font-weight: 500;
+         font-size: rem(16);
+         line-height: calc((24 / 16) * 100%);
+         color: $color-white;
+         opacity: 0.6;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+   // .info-about__link
+   &__link {
+      color: $color-white;
+      @include pc_576 {
+         font-size: rem(14);
+      }
+   }
+}

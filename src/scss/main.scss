@@ -1,0 +1,36 @@
+@use "sass:math";
+//Миксины
+@import "mixins/font-face"; //Подключение шрифтов
+@import "mixins/burger"; // Тройной бургер
+@import "mixins/ad-value"; // Адаптивное свойство
+@import "mixins/breakpoints"; // Брейкпоинты и hover только для пк
+@import "mixins/rem-em-prc"; // Брейкпоинты и hover только для пк
+
+//Настройки проекта
+@import "project-settings/fonts";
+@import "project-settings/start";
+@import "project-settings/settings";
+@import "blocks/common/main";
+
+//Стили для плагинов
+@import "./vendors";
+
+//Подключение UI компонентов (кнопки, инпуты, формы и тд)
+@import "blocks/common/buttons";
+@import "blocks/common/forms";
+@import "blocks/common/page";
+@import "blocks/common/title";
+
+// Подключение блоков
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/about-me";
+@import "blocks/stack";
+@import "blocks/projects";
+@import "blocks/info-about";
+@import "blocks/stack-list";
+@import "blocks/project-article";
+@import "blocks/tabs-projects";
+@import "blocks/social";
+@import "blocks/scroll-top";
+@import "blocks/footer";

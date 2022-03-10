@@ -1,0 +1,72 @@
+//----------PC FIRST
+@mixin pc_custom($width) {
+   @media (max-width: em($width)) {
+      @content;
+   }
+}
+@mixin pc_576 {
+   @media (max-width: em(575.98)) {
+      @content;
+   }
+}
+@mixin pc_768 {
+   @media (max-width: em(767.98)) {
+      @content;
+   }
+}
+@mixin pc_992 {
+   @media (max-width: em(991.98)) {
+      @content;
+   }
+}
+@mixin pc_1200 {
+   @media (max-width: em(1199.98)) {
+      @content;
+   }
+}
+@mixin pc_1400 {
+   @media (max-width: em(1399.98)) {
+      @content;
+   }
+}
+
+//MOBILE FIRST
+@mixin mb_custom($width) {
+   @media (min-width: em($width)) {
+      @content;
+   }
+}
+@mixin mb_576 {
+   @media (min-width: em(575.98)) {
+      @content;
+   }
+}
+@mixin mb_768 {
+   @media (min-width: em(767.98)) {
+      @content;
+   }
+}
+@mixin mb_992 {
+   @media (min-width: em(991.98)) {
+      @content;
+   }
+}
+@mixin mb_1200 {
+   @media (min-width: em(1199.98)) {
+      @content;
+   }
+}
+@mixin mb_1400 {
+   @media (min-width: em(1399.98)) {
+      @content;
+   }
+}
+
+//ONLY PC HOVER
+@mixin pc_hover {
+   @media not all and (pointer: coarse) {
+      &:hover {
+         @content;
+      }
+   }
+}
