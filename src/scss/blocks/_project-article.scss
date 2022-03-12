@@ -2,6 +2,7 @@
    // .project-article__title
    &__title {
    }
+
    // .project-article__descr
    &__descr {
       line-height: calc((33 / 18) * 100%);
@@ -13,18 +14,21 @@
          font-size: rem(14);
       }
    }
+
    // .project-article__list
    &__list {
       margin-bottom: rem(28);
    }
+
    // .project-article__buttons
    &__buttons {
       display: flex;
       align-items: center;
       gap: rem(20);
    }
+
    // .project-article__btn
    &__btn {
-      width: 50%;
+      width: 100%;
    }
 }

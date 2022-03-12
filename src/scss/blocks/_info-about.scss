@@ -7,6 +7,7 @@
    // .info-about__list
    &__list {
    }
+
    // .info-about__item
    &__item {
       span {
@@ -18,15 +19,21 @@
          color: $color-white;
          opacity: 0.6;
       }
+
       &:not(:last-child) {
          margin-bottom: rem(20);
       }
    }
+
    // .info-about__link
    &__link {
       color: $color-white;
       @include pc_576 {
          font-size: rem(14);
+      }
+
+      @include pc_hover {
+         text-decoration: underline;
       }
    }
 }

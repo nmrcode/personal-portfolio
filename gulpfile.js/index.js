@@ -58,4 +58,4 @@ exports.clear = clear; // Удаление папки продакшена
 exports.dev = dev; //Разработка
 exports.build = build; //Сборка
 exports.zip = series(build, zip); //Архивация
-exports.deploy = deploy; //Архивация
+exports.deploy = deploy; //Деплой на gh-pages

@@ -10,6 +10,7 @@
          gap: rem(10);
       }
    }
+
    // .tabs-projects__item
    &__item {
       flex: 1 1 auto;
@@ -17,17 +18,21 @@
          flex: 1 1 100%;
       }
    }
+
    // .tabs-projects__tab
    &__tab {
       width: 100%;
       color: $color-accent;
       padding: rem(10) rem(20);
-      border: 1px solid $color-accent;
+      font-weight: 500;
+      font-size: rem(18);
+      border: 2px solid $color-accent;
       transition: all 0.2s ease-in-out;
       @include pc_hover {
          color: $color-white;
          background-color: $color-accent;
       }
+
       &._active {
          pointer-events: none;
          color: $color-white;
